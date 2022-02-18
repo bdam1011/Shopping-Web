@@ -1,9 +1,8 @@
 # hello-vue-cli
 
-## Introduction
-```
+# Introduction
+
 This is a program about the learning process of myself trying to figure out how to bulid up Vue.js from Vue Cli.
-```
 
 ## Project setup
 ```
