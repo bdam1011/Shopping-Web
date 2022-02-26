@@ -31,7 +31,9 @@
 
   <div>
     <h1>hello world!</h1>
+    <p></p>
   </div>
+
 </template>
 
 <script>
