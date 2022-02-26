@@ -1,6 +1,6 @@
-#  hello-vue-cli
+#  Shopping Web
 Introduction:
-This is a program about the learning process of myself trying to figure out how to bulid up Vue.js from Vue Cli.
+This is a program about the learning process of trying to figure out how to bulid up Vue.js from Vue Cli. Furthermore, this program will be built up as a front end of a shopping web sites by EEIT36 group four.
 
 ## Project setup
 ```
