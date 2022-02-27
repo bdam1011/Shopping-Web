@@ -22,6 +22,9 @@ export default {
   data() {
     return {
       prop: {
+        /**
+         * Set the carousel to be the navigation of other carousels
+         */
         asNavFor: {
           type: Array,
           default: function () {
