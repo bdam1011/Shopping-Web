@@ -1,5 +1,6 @@
 <template>
-  <AppHeader/>
+  <app-header/>
+  <slider-carousel/>
   <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -9,11 +10,13 @@
 
 <script>
 import AppHeader from "@/components/AppHeader.vue";
+import SliderCarousel from "@/components/Slider.vue"
 
 export default {
   name: "App",
   components: {
     AppHeader,
+    SliderCarousel
   },
 };
 </script>
