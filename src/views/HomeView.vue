@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <slider-carousel/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
