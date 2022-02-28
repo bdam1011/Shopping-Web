@@ -1,13 +1,8 @@
 <template>
   <agile :prop="value">
-    <div class="slide">
-      <h3>slide 1</h3>
-    </div>
-    <div class="slide">
-      <h3>slide 2</h3>
-    </div>
-    <div class="slide">
-      <h3>slide 3</h3>
+    <div class="slide" v-for="(item, index) in product.gift" :key="index">
+      <img :src="item.url" />
+      <h3>{{ item.name }}</h3>
     </div>
   </agile>
 </template>
@@ -21,7 +16,26 @@ export default {
   },
   data() {
     return {
+      product: {
+        gift: [
+          {
+            name: "三星蔥蛋捲",
+            url: "https://www.june1.com.tw/assets/uploads/530x530/20210806160309242526.jpg",
+          },
+          {
+            name: "咬咬果",
+            url: "https://maruplayplay.com/wp-content/uploads/bitebitefruit1.jpg",
+          },
+          {
+            name: "椰子球",
+            url: "https://www.welcometw.com/wp-content/uploads/2020/05/%E5%9C%965-%E6%A4%B0%E5%AD%90%E7%90%83-mimima14-787x510-1.jpg",
+          },
+        ],
+      },
       prop: {
+        /**
+         * Set the carousel to be the navigation of other carousels
+         */
         asNavFor: {
           type: Array,
           default: function () {
@@ -54,7 +68,7 @@ export default {
          */
         centerPadding: {
           type: String,
-          default: "15%",
+          default: "10%",
         },
         /**
          * Slide change delay in milliseconds
@@ -202,3 +216,15 @@ export default {
   },
 };
 </script>
+<style scoped>
+.slide {
+  width: 100%;
+  height: 60%;
+}
+.slide > img {
+  height: 400px;
+}
+.agile__slides{
+  align-items: flex-start;
+}
+</style>
