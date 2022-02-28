@@ -219,12 +219,10 @@ export default {
 <style scoped>
 .slide {
   width: 100%;
-  height: 60%;
+  height: 100%;
+  margin-top:10px;
 }
 .slide > img {
   height: 400px;
-}
-.agile__slides{
-  align-items: flex-start;
 }
 </style>
