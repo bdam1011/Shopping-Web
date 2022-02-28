@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 
 nav > ul {
   list-style-type: none;
