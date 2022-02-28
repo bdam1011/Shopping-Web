@@ -32,7 +32,7 @@ export default {
           },
         ],
       },
-      prop: {
+      value: {
         /**
          * Set the carousel to be the navigation of other carousels
          */
@@ -223,6 +223,6 @@ export default {
   margin-top:10px;
 }
 .slide > img {
-  height: 400px;
+  height: 60vh;
 }
 </style>
