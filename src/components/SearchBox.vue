@@ -1,13 +1,13 @@
 <template>
   <div>
-    <form v-on:submit="search()">
+  
       <select v-model="place">
         <option disabled value="">請選擇</option>
         <option v-for="item in counties" :key="item">{{item}}</option>
       </select>
       <input type="text" v-model="souvenir" placeholder="souvenir" />
-      <button type="submit">搜尋</button>
-    </form>
+      <button type="submit" @click="search()">搜尋</button>
+ 
   </div>
 </template>
 
@@ -27,12 +27,14 @@ export default {
   },
   methods: {
     search() {
-      return console.log(this.place+this.souvenir);//???
+      console.log(this.place+this.souvenir);
+      this.$router.push({ name: "shopcartr" });
     },
   },
 };
 </script>
 <style scoped>
+
 div input{
   width: 40vw;
 } 
