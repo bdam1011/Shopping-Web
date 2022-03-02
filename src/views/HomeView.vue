@@ -1,7 +1,8 @@
 <template>
   <div class="home">
+    <search-box/>
     <slider-carousel/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Souvenir Shop of Agricultural Products "/>
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
 import SliderCarousel from "@/components/Slider.vue";
+import SearchBox from "@/components/SearchBox.vue";
 
 export default {
   name: 'HomeView',
   components: {
     HelloWorld,
-    SliderCarousel
+    SliderCarousel,
+    SearchBox
   }
 }
 </script>

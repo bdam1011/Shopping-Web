@@ -1,5 +1,5 @@
 <template>
-  <agile  :autoplay-speed="2000" :autoplay="true" :slides-to-show="2">
+  <agile  :autoplay-speed="2000" :autoplay="true" :slides-to-show="3">
     <div class="slide" v-for="(item, index) in product.gift" :key="index">
       <img :src="item.url" />
       <h3>{{ item.name }}</h3>
