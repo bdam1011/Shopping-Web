@@ -34,7 +34,11 @@ export default {
 };
 </script>
 <style scoped>
+div{
 
+  position: absolute;
+  right: 0px;
+}
 div input{
   width: 40vw;
 } 

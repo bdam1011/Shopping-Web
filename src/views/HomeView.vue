@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <search-box/>
+    
     <slider-carousel/>
     <HelloWorld msg="Welcome to Souvenir Shop of Agricultural Products "/>
   </div>

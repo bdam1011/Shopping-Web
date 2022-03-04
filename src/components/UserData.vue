@@ -1,6 +1,7 @@
 <template>
+<div class="aawe">
   <div>
-    <img src="https://i1.kknews.cc/NvxRvur4qlHQ5xXxcRBZqOmGWYxBE3n666CG2kQ/0.jpg" />
+    <img src="https://d1grca2t3zpuug.cloudfront.net/2019/05/ajisai20.jpg" />
   </div>
   <br>
   <div>
@@ -16,6 +17,7 @@
       <li>CreditCards: {{info.CreditCards}}</li>
     </ul>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,15 +41,25 @@ export default {
 };
 </script>
 <style scoped>
-img{
-    position: fixed;
+.aawe{
     left: 0px;
+    justify-content: center; 
+    align-items: center; 
+    width: 20vw;
+    padding:20px;
+}
+img{
+   
+    left: 0px;
+    width: 100%;
 
 }
-.userInfo li{
+.userInfo{
     list-style-position: inside;
     text-align: left;
     border: solid;
-    width: 20vw;
+    width: 100%;
+    margin: 0px;
+    padding:0px;
 }
 </style>
