@@ -1,6 +1,6 @@
 <template>
   <div class="user">
-    <div class="userhead" v-bind:style="picture"></div>
+    <div class="userhead" v-bind:style="{'background-image':picture}"></div>
     <br />
     <div>
       <table class="userInfo">
@@ -55,10 +55,13 @@ export default {
         Email: "ONE@gmail.com",
         CreditCards: "1321354546563",
       },
-      picture:{
-        
-      }
+      url: "https://d1grca2t3zpuug.cloudfront.net/2019/05/ajisai20.jpg"
     };
+  },
+  computed:{
+    picture(){
+      return "url("+this.url+")"
+    }
   },
 };
 </script>
@@ -74,7 +77,7 @@ export default {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  background-image: url("https://d1grca2t3zpuug.cloudfront.net/2019/05/ajisai20.jpg");
+  /* background-image: url("https://d1grca2t3zpuug.cloudfront.net/2019/05/ajisai20.jpg"); */
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: 50% 0;
