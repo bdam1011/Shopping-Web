@@ -1,23 +1,42 @@
 <template>
-<div class="aawe">
-  <div>
-    <img src="https://d1grca2t3zpuug.cloudfront.net/2019/05/ajisai20.jpg" />
+  <div class="user">
+    <div class="userhead" v-bind:style="picture"></div>
+    <br />
+    <div>
+      <table class="userInfo">
+        <tr>
+          <th>User Information</th>
+        </tr>
+        <tr>
+          Userid: {{info.Userid}}
+        </tr>
+        <tr>
+          Name: {{info.Name}}
+        </tr>
+        <tr>
+          Nickname: {{info.Nickname}}
+        </tr>
+        <tr>
+          Gender: {{info.Gender}}
+        </tr>
+        <tr>
+          Birthday: {{info.Birthday}}
+        </tr>
+        <tr>
+          Phone: {{info.Phone}}
+        </tr>
+        <tr>
+          Address: {{info.Address}}
+        </tr>
+        <tr>
+          Email: {{info.Email}}
+        </tr>
+        <tr>
+          CreditCards: {{info.CreditCards}}
+        </tr>
+      </table>
+    </div>
   </div>
-  <br>
-  <div>
-    <ul class="userInfo">
-      <li>Userid: {{info.Userid}}</li>
-      <li>Name: {{info.Name}}</li>
-      <li>Nickname: {{info.Nickname}}</li>
-      <li>Gender: {{info.Gender}}</li>
-      <li>Birthday: {{info.Birthday}}</li>
-      <li>Phone: {{info.Phone}}</li>
-      <li>Address: {{info.Address}}</li>
-      <li>Email: {{info.Email}}</li>
-      <li>CreditCards: {{info.CreditCards}}</li>
-    </ul>
-  </div>
-</div>
 </template>
 
 <script>
@@ -36,30 +55,43 @@ export default {
         Email: "ONE@gmail.com",
         CreditCards: "1321354546563",
       },
+      picture:{
+        
+      }
     };
   },
 };
 </script>
 <style scoped>
-.aawe{
-    left: 0px;
-    justify-content: center; 
-    align-items: center; 
-    width: 20vw;
-    padding:20px;
+.user {
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  padding: 20px;
 }
-img{
-   
-    left: 0px;
-    width: 100%;
+.userhead {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-image: url("https://d1grca2t3zpuug.cloudfront.net/2019/05/ajisai20.jpg");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
 
+.userInfo {
+  border: solid;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
 }
-.userInfo{
-    list-style-position: inside;
-    text-align: left;
-    border: solid;
-    width: 100%;
-    margin: 0px;
-    padding:0px;
+.userInfo tr {
+  height: 1.5rem;
+}
+tr:first-child {
+  color: #fff;
+  background-color: #00ced1;
 }
 </style>
