@@ -67,11 +67,12 @@ export default {
 </script>
 <style scoped>
 .user {
-  left: 0px;
+  
   justify-content: center;
+  /* left: 0px;
   align-items: center;
   width: 20vw;
-  padding: 20px;
+  padding: 20px; */
 }
 .userhead {
   width: 20vw;
@@ -84,6 +85,7 @@ export default {
 }
 
 .userInfo {
+  height: 55vh;
   border: solid;
   width: 100%;
   margin: 0px;
@@ -91,10 +93,10 @@ export default {
   text-align: left;
 }
 .userInfo tr {
-  height: 1.5rem;
+  height: 2rem;
 }
 tr:first-child {
-  color: #fff;
-  background-color: #00ced1;
+  color: #000000;
+  background-color: #ddd;;
 }
 </style>

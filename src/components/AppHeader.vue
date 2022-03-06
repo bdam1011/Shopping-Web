@@ -2,6 +2,7 @@
     <nav>
       <ul class="router-inlineblock">
         <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/userpage">User Page</router-link></li>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/shopcartr">Shopping Cart</router-link></li>
         <li><router-link to="/about">Login</router-link></li>
