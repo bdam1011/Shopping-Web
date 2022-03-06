@@ -4,8 +4,8 @@
       <user-data />
     </div>
     <div class="tradeInfo">
-      <router-link to="/userpage">page1</router-link>
-      <router-link to="/userpage/scrolltable2">page2</router-link>
+      <router-link to="/userpage">商品庫存</router-link>
+      <router-link to="/userpage/scrolltable2">出貨狀況</router-link>
       <router-view></router-view>
       <!-- <scroll-table /> -->
     </div>
