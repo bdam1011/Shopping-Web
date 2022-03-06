@@ -4,17 +4,20 @@
       <user-data />
     </div>
     <div class="tradeInfo">
-      <scroll-table />
+      <router-link to="/userpage">page1</router-link>
+      <router-link to="/userpage/scrolltable2">page2</router-link>
+      <router-view></router-view>
+      <!-- <scroll-table /> -->
     </div>
   </div>
 </template>
 <script>
 import UserData from "@/components/UserData.vue";
-import ScrollTable from "@/components/ScrollTable.vue";
+// import ScrollTable from "@/components/ScrollTable.vue";
 export default {
   components: {
     UserData,
-    ScrollTable,
+    // ScrollTable,
   },
 };
 </script>

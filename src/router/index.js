@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ScrollTable from '@/components/ScrollTable.vue'
+import ScrollTable2 from '@/components/ScrollTable2.vue'
 
 const routes = [
   {
@@ -29,7 +31,19 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/UserPage.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/UserPage.vue'),
+    children:[
+      {
+        path: '',
+        name:'ScrollTable',
+        component:ScrollTable
+      },
+      {
+        path:'scrolltable2',
+        name:'ScrollTable2',
+        component:ScrollTable2
+      }
+    ]
   }
 ]
 
